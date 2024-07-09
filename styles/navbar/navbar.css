@@ -1,0 +1,123 @@
+.banner {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.banner .slider {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 10%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 30s linear infinite;
+}
+@keyframes autoRun {
+  from {
+    transform: perspective(1000px) rotateX(-15deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-15deg) rotateY(360deg);
+  }
+}
+.banner .slider .item {
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: 
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
+    translateZ(550px);
+}
+.banner .slider .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  border: 1px solid black;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: all .2s ease-in-out;
+}
+.banner .slider .item img:hover {
+  transform: scale(1.05);
+}
+
+
+/* || RESPOSIVENESS || */
+
+@media screen and (max-width:1600px) {
+  /* makes everything 25% smaller than initial size */
+  .banner .slider .item {  transform: 
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
+    translateZ(412.5px);}
+  
+  .banner .slider {
+    width: 150px;
+    height: 187.5px;
+    left: calc(50% - 75px);
+  }
+}
+@media screen and (max-width:1300px) {
+  /* makes everything 35% smaller than initial size */
+  .banner .slider .item {  transform: 
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
+    translateZ(357.5px);}
+  
+  .banner .slider {
+    width: 130px;
+    height: 162.5px;
+    left: calc(50% - 65px);
+  }
+}
+@media screen and (max-width:1000px) {
+  /* makes everything 45% smaller than initial size */
+  .banner .slider .item {  transform: 
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
+    translateZ(302.5px);}
+  
+  .banner .slider {
+    width: 110px;
+    height: 137.5px;
+    left: calc(50% - 55px);
+  }
+}
+@media screen and (max-width:850px) {
+  /* makes everything 60% smaller than initial size */
+  .banner .slider .item {  transform: 
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
+    translateZ(220px);}
+  
+  .banner .slider {
+    width: 80px;
+    height: 100px;
+    left: calc(50% - 40px);
+  }
+}
+@media screen and (max-width:550px) {
+  /* makes everything 65% smaller than initial size */
+  .banner .slider .item {  transform: 
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
+    translateZ(192.5px);}
+  
+  .banner .slider {
+    width: 70px;
+    height: 87.5px;
+    left: calc(50% - 35px);
+  }
+}
+@media screen and (max-width:450px) {
+  /* makes everything 70% smaller than initial size */
+  .banner .slider .item {  transform: 
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
+    translateZ(160px);}
+  
+  .banner .slider {
+    width: 60px;
+    height: 75px;
+    left: calc(50% - 30px);
+  }
+}
