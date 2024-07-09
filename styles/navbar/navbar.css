@@ -43,7 +43,9 @@
   transition: all .2s ease-in-out;
 }
 .banner .slider .item img:hover {
-  transform: scale(1.1);
+  width: 110%;
+  height: 110%;
+  transform: translate(-5%, -5%);
 }
 
 
