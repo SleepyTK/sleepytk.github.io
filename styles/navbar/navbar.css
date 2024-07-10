@@ -53,15 +53,52 @@
 
 /* || RESPOSIVENESS || */
 
+
+@media screen and (max-width:3841px) {
+  /* makes everything 30% bigger than initial size */
+  .banner .slider .item {  transform: 
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
+    translateZ(calc(550px * 1.30));}
+  
+  .banner .slider {
+    width: calc(200px * 1.30);
+    height: calc(250px * 1.30);
+    left: calc(50% - 130px);
+  }
+}
+@media screen and (max-width:2561px) {
+  /* makes everything 15% bigger than initial size */
+  .banner .slider .item {  transform: 
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
+    translateZ(calc(550px * 1.15));}
+  
+  .banner .slider {
+    width: calc(200px * 1.15);
+    height: calc(250px * 1.15);
+    left: calc(50% - 115px);
+  }
+}
+@media screen and (max-width:1920px) {
+  /* initial size */
+  .banner .slider .item {  transform: 
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
+    translateZ(550px);}
+  
+  .banner .slider {
+    width: 200px;
+    height: 250px;
+    left: calc(50% - 100px);
+  }
+}
 @media screen and (max-width:1600px) {
   /* makes everything 25% smaller than initial size */
   .banner .slider .item {  transform: 
     rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
-    translateZ(412.5px);}
+    translateZ(calc(550px * 0.75));}
   
   .banner .slider {
-    width: 150px;
-    height: 187.5px;
+    width: calc(200px * 0.75);
+    height: calc(250px * 0.75);
     left: calc(50% - 75px);
   }
 }
@@ -69,11 +106,11 @@
   /* makes everything 35% smaller than initial size */
   .banner .slider .item {  transform: 
     rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
-    translateZ(357.5px);}
+    translateZ(calc(550px * 0.65));}
   
   .banner .slider {
-    width: 130px;
-    height: 162.5px;
+    width: calc(200px * 0.65);
+    height: calc(250px * 0.65);
     left: calc(50% - 65px);
   }
 }
@@ -81,11 +118,11 @@
   /* makes everything 45% smaller than initial size */
   .banner .slider .item {  transform: 
     rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
-    translateZ(302.5px);}
+    translateZ(calc(550px * 0.55));}
   
   .banner .slider {
-    width: 110px;
-    height: 137.5px;
+    width: calc(200px * 0.55);
+    height: calc(250px * 0.55);
     left: calc(50% - 55px);
   }
 }
@@ -93,11 +130,11 @@
   /* makes everything 60% smaller than initial size */
   .banner .slider .item {  transform: 
     rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
-    translateZ(220px);}
+    translateZ(calc(550px * 0.40));}
   
   .banner .slider {
-    width: 80px;
-    height: 100px;
+    width: calc(200px * 0.40);
+    height: calc(250px * 0.40);
     left: calc(50% - 40px);
   }
 }
@@ -105,11 +142,11 @@
   /* makes everything 65% smaller than initial size */
   .banner .slider .item {  transform: 
     rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
-    translateZ(192.5px);}
+    translateZ(calc(550px * 0.35));}
   
   .banner .slider {
-    width: 70px;
-    height: 87.5px;
+    width: calc(200px * 0.35);
+    height: calc(250px * 0.35);
     left: calc(50% - 35px);
   }
 }
@@ -117,11 +154,11 @@
   /* makes everything 70% smaller than initial size */
   .banner .slider .item {  transform: 
     rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
-    translateZ(160px);}
+    translateZ(calc(550px * 0.30));}
   
   .banner .slider {
-    width: 60px;
-    height: 75px;
+    width: calc(200px * 0.30);
+    height: calc(250px * 0.30);
     left: calc(50% - 30px);
   }
 }
