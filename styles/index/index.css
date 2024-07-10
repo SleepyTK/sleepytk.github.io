@@ -9,6 +9,9 @@
   /* colors */
   --main-background-color: rgb(208,208,208);
   --main-text-color: rgb(37, 40, 59);
+
+  --lightmode-background-grid-color: rgb;
+  --darkmode-background-grid-color: rgb;
 }
 * {
   margin: 0;
