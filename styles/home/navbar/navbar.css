@@ -50,7 +50,7 @@
 }
 .banner .nav-content {
   position: absolute;
-  bottom: 0;
+  top: 42rem;
   left: 50%;
   transform: translateX(-50%);
   width: min(1400px, 100vw);
@@ -140,7 +140,7 @@
   /* changes font-size accordingly */
   .banner .nav-content{
     width: 1100px;
-    padding-bottom: 230px;
+    top: 32rem;
   }
   .banner .nav-content h1 {
     font-size: 7rem;
@@ -165,7 +165,7 @@
   /* changes font-size accordingly */
   .banner .nav-content{
     width: 900px;
-    padding-bottom: 350px;
+    top: 28rem;
   }
   .banner .nav-content h1 {
     font-size: 6rem;
@@ -190,7 +190,7 @@
   /* changes font-size accordingly */
   .banner .nav-content{
     width: 800px;
-    padding-bottom: 450px;
+    top: 23rem;
   }
   .banner .nav-content h1 {
     font-size: 4.5rem;
@@ -215,7 +215,7 @@
   /* changes font-size accordingly */
   .banner .nav-content{
     width: 362px;
-    padding-bottom: 425px;
+    top: 18rem;
     justify-content: end;
   }
   .banner .nav-content h1 {
@@ -241,7 +241,7 @@
   /* changes font-size accordingly */
   .banner .nav-content{
     width: 319px;
-    padding-bottom: 500px;
+    top: 17rem;
   }
   .banner .nav-content h1 {
     font-size: 3.5rem;
@@ -266,47 +266,19 @@
     left: calc(50% - 30px);
   }
 
-    /* changes font-size accordingly */
-    .banner .nav-content{
-      width: 319px;
-      padding-bottom: 525px;
-    }
-    .banner .nav-content h1 {
-      font-size: 3.5rem;
-      line-height: 3rem;
-    }
-    .banner .nav-content .info h2{
-      font-size: 1.35rem;
-    }
-    .banner .nav-content .info p {
-      font-size: .75rem;
-    }
-}
-@media screen and (max-width:420px) {
-  /* makes everything 70% smaller than initial size */
-  .banner .slider .item {  transform: 
-    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
-    translateZ(calc(550px * 0.30));}
-  
-  .banner .slider {
-    width: calc(200px * 0.30);
-    height: calc(250px * 0.30);
-    left: calc(50% - 30px);
+  /* changes font-size accordingly */
+  .banner .nav-content{
+    width: 319px;
+    top: 16rem;
   }
-
-    /* changes font-size accordingly */
-    .banner .nav-content{
-      width: 319px;
-      padding-bottom: 500px;
-    }
-    .banner .nav-content h1 {
-      font-size: 3.5rem;
-      line-height: 3rem;
-    }
-    .banner .nav-content .info h2{
-      font-size: 1.35rem;
-    }
-    .banner .nav-content .info p {
-      font-size: .75rem;
-    }
+  .banner .nav-content h1 {
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+  .banner .nav-content .info h2{
+    font-size: 1.35rem;
+  }
+  .banner .nav-content .info p {
+    font-size: .75rem;
+  }
 }
