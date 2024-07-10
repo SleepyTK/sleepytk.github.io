@@ -35,8 +35,7 @@
   height: 100%;
   object-fit: cover;
 
-  border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 3px;
 
   cursor: pointer;
 
@@ -49,6 +48,42 @@
 
   transition: all .2s ease-in-out;
 }
+.banner .nav-content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1400px, 100vw);
+  height: max-content;
+  padding-bottom: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+}
+.banner .nav-content h1 {
+  font-family: 'ICA Rubrik';
+  font-size: 8rem;
+  line-height: 7rem;
+  text-align: left;
+  border-left: 1px solid var(--main-text-color);
+  padding-left: .5rem;
+
+  background: linear-gradient(-10deg, var(--main-background-color), var(--main-text-color), var(--main-text-color), var(--main-text-color), var(--main-background-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner .nav-content .info {
+  font-family: 'Poppins';
+  text-align: right;
+  max-width: 300px;
+  border-right: 1px solid var(--main-text-color);
+  padding-right: .5rem;
+}
+.banner .nav-content .info h2{
+  font-size: 3rem;
+}
+
 
 
 /* || RESPOSIVENESS || */
@@ -101,6 +136,19 @@
     height: calc(250px * 0.75);
     left: calc(50% - 75px);
   }
+
+  /* changes font-size accordingly */
+  .banner .nav-content{
+    width: 1100px;
+    padding-bottom: 230px;
+  }
+  .banner .nav-content h1 {
+    font-size: 7rem;
+    line-height: 6.5rem;
+  }
+  .banner .nav-content .info h2{
+    font-size: 2.75rem;
+  }
 }
 @media screen and (max-width:1300px) {
   /* makes everything 35% smaller than initial size */
@@ -112,6 +160,19 @@
     width: calc(200px * 0.65);
     height: calc(250px * 0.65);
     left: calc(50% - 65px);
+  }
+
+  /* changes font-size accordingly */
+  .banner .nav-content{
+    width: 900px;
+    padding-bottom: 350px;
+  }
+  .banner .nav-content h1 {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+  .banner .nav-content .info h2{
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width:1000px) {
@@ -125,6 +186,19 @@
     height: calc(250px * 0.55);
     left: calc(50% - 55px);
   }
+
+  /* changes font-size accordingly */
+  .banner .nav-content{
+    width: 800px;
+    padding-bottom: 450px;
+  }
+  .banner .nav-content h1 {
+    font-size: 4.5rem;
+    line-height: 4rem;
+  }
+  .banner .nav-content .info h2{
+    font-size: 1.75rem;
+  }
 }
 @media screen and (max-width:850px) {
   /* makes everything 60% smaller than initial size */
@@ -136,6 +210,20 @@
     width: calc(200px * 0.40);
     height: calc(250px * 0.40);
     left: calc(50% - 40px);
+  }
+
+  /* changes font-size accordingly */
+  .banner .nav-content{
+    width: 362px;
+    padding-bottom: 425px;
+    justify-content: end;
+  }
+  .banner .nav-content h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .banner .nav-content .info h2{
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width:550px) {
@@ -149,6 +237,22 @@
     height: calc(250px * 0.35);
     left: calc(50% - 35px);
   }
+
+  /* changes font-size accordingly */
+  .banner .nav-content{
+    width: 319px;
+    padding-bottom: 500px;
+  }
+  .banner .nav-content h1 {
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+  .banner .nav-content .info h2{
+    font-size: 1.35rem;
+  }
+  .banner .nav-content .info p {
+    font-size: .75rem;
+  }
 }
 @media screen and (max-width:450px) {
   /* makes everything 70% smaller than initial size */
@@ -161,4 +265,48 @@
     height: calc(250px * 0.30);
     left: calc(50% - 30px);
   }
+
+    /* changes font-size accordingly */
+    .banner .nav-content{
+      width: 319px;
+      padding-bottom: 525px;
+    }
+    .banner .nav-content h1 {
+      font-size: 3.5rem;
+      line-height: 3rem;
+    }
+    .banner .nav-content .info h2{
+      font-size: 1.35rem;
+    }
+    .banner .nav-content .info p {
+      font-size: .75rem;
+    }
+}
+@media screen and (max-width:420px) {
+  /* makes everything 70% smaller than initial size */
+  .banner .slider .item {  transform: 
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
+    translateZ(calc(550px * 0.30));}
+  
+  .banner .slider {
+    width: calc(200px * 0.30);
+    height: calc(250px * 0.30);
+    left: calc(50% - 30px);
+  }
+
+    /* changes font-size accordingly */
+    .banner .nav-content{
+      width: 319px;
+      padding-bottom: 500px;
+    }
+    .banner .nav-content h1 {
+      font-size: 3.5rem;
+      line-height: 3rem;
+    }
+    .banner .nav-content .info h2{
+      font-size: 1.35rem;
+    }
+    .banner .nav-content .info p {
+      font-size: .75rem;
+    }
 }

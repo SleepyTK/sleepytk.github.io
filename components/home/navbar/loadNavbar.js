@@ -1,4 +1,4 @@
-fetch('components/navbar/navbar.html')
+fetch('components/home/navbar/navbar.html')
     .then(response => response.text())
     .then(data => {
         document.body.innerHTML += data;

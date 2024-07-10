@@ -1,4 +1,4 @@
-fetch('components/head/head.html')
+fetch('components/home/head/head.html')
     .then(response => response.text())
     .then(data => {
         document.head.innerHTML += data;
