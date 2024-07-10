@@ -270,15 +270,16 @@
   .banner .nav-content{
     width: 319px;
     top: 16rem;
+    justify-content: space-between;
   }
   .banner .nav-content h1 {
-    font-size: 3.5rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 1.5rem;
   }
   .banner .nav-content .info h2{
-    font-size: 1.35rem;
+    font-size: .8rem;
   }
   .banner .nav-content .info p {
-    font-size: .75rem;
+    font-size: .4rem;
   }
 }
