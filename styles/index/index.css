@@ -4,14 +4,16 @@
 :root {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--main-text-color);
+  color: var(--lightmode-text-color);
 
   /* colors */
-  --main-background-color: rgb(208,208,208);
-  --main-text-color: rgb(37, 40, 59);
+  --lightmode-background-color: rgb(208,208,208);
+  --lightmode-text-color: rgb(37, 40, 59);
+  --lightmode-background-grid-color: rgb(190, 190, 190);
 
-  --lightmode-background-grid-color: rgb;
-  --darkmode-background-grid-color: rgb;
+  --darkmode-background-color: rgb(40, 40, 40);
+  --darkmode-text-color: rgb(200, 220, 240);
+  --darkmode-background-grid-color: rgb(240, 240, 240);
 }
 * {
   margin: 0;
@@ -19,7 +21,7 @@
   box-sizing: border-box;
 }
 html {
-  background-color: var(--main-background-color);
+  background-color: var(--lightmode-background-color);
 }
 
 .background-grid {
@@ -30,8 +32,8 @@ html {
   height: 100%;
   background-size: 50px 50px;
   background-image:
-      linear-gradient(to right, rgb(190, 190, 190) 1px, transparent 1px),
-      linear-gradient(to bottom, rgb(189, 189, 189) 1px, transparent 1px);
+      linear-gradient(to right, var(--lightmode-background-grid-color) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--lightmode-background-grid-color) 1px, transparent 1px);
   z-index: -1; /* Ensure the grid is behind the content */
 }
 
