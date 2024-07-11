@@ -17,6 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
   border-radius: 0 10px 10px 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .15);
 }
