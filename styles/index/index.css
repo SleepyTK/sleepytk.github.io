@@ -38,7 +38,16 @@ html {
       linear-gradient(to bottom, var(--main-background-grid-color) 1px, transparent 1px);
   z-index: -1; /* Ensure the grid is behind the content */
 }
-
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+.header-title h1 {
+  font-family: 'Poppins';
+  font-weight: 300;
+}
 
 
 /* || RESPOSIVENESS || */
