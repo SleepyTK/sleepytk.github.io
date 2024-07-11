@@ -7,7 +7,7 @@
   color: var(--lightmode-text-color);
 
   /* colors */
-  --lightmode-background-color: rgb(208,208,208);
+  --lightmode-background-color: rgb(235, 235, 235);
   --lightmode-text-color: rgb(37, 40, 59);
   --lightmode-background-grid-color: rgb(190, 190, 190);
 
