@@ -38,6 +38,30 @@ html {
       linear-gradient(to bottom, var(--main-background-grid-color) 1px, transparent 1px);
   z-index: -1; /* Ensure the grid is behind the content */
 }
+
+/* CODE FOR EXAMPLE PAGES */
+.back-button {
+  position: relative;
+  background-color: white;
+
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: .75rem 3rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  text-shadow: 4px 4px rgb(0, 0, 0, .1) inset;
+
+  transition: all .6s;
+}
+.back-button img {
+  transform: translate(-5px, 5px);
+}
+.back-button:hover{
+  box-shadow: 4px 4px 4px rgb(0, 0, 0, .125) inset, -3px -3px 3px rgb(245, 245, 245) inset;
+  transition: all .2s;
+}
 .header{
   display: flex;
   justify-content: space-between;
@@ -56,5 +80,13 @@ html {
 @media screen  and (max-width:1000px){
   .background-grid {
     background-size: 30px 30px;
+  }
+}
+@media screen and (max-width:550px) {
+  .header .header-title h1 {
+    font-size: 1.25rem;
+  }
+  .back-button {
+    padding: .5rem 2rem;
   }
 }
