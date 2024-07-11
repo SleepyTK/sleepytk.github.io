@@ -1,4 +1,4 @@
-fetch('components/home/content/content.html')
+fetch('components/content/content.html')
     .then(response => response.text())
     .then(data => {
         document.body.innerHTML += data;

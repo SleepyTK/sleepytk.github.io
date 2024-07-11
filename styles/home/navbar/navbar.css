@@ -70,7 +70,7 @@
   padding-left: .5rem;
 
   background: linear-gradient(-10deg, var(--lightmode-background-color), var(--lightmode-text-color), var(--lightmode-text-color), var(--lightmode-text-color), var(--lightmode-background-color));
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .banner .nav-content .info {

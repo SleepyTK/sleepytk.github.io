@@ -1,0 +1,31 @@
+html {
+  background-color: rgb(235, 235, 235);
+}
+
+.back-button {
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 1rem;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  border: none;
+
+  box-shadow: 4px 4px 4px rgb(0, 0, 0, .1) inset, -3px -3px 3px white inset;
+  transition: box-shadow .6s;
+}
+.back-button:hover{
+  box-shadow: 4px 4px 4px rgb(0, 0, 0, .1), -3px -3px 3px white;
+  transition: box-shadow .6s;
+}
+
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 200px;
+}
+
+.button-display {
+  margin:auto;
+}
