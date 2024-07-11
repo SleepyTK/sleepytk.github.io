@@ -1,5 +1,6 @@
 .back-button {
   position: relative;
+  background-color: white;
 
   font-family: "Poppins";
   font-size: 1.2rem;
@@ -9,6 +10,7 @@
   cursor: pointer;
   border: none;
   border-radius: 6px;
+  text-shadow: 4px 4px rgb(0, 0, 0, .1) inset;
 
   transition: all .6s;
 }
@@ -16,7 +18,7 @@
   transform: translate(-5px, 5px);
 }
 .back-button:hover{
-  box-shadow: 4px 4px 4px rgb(0, 0, 0, .1) inset, -3px -3px 3px rgb(235, 235, 235) inset;
+  box-shadow: 4px 4px 4px rgb(0, 0, 0, .125) inset, -3px -3px 3px rgb(245, 245, 245) inset;
   transition: all .2s;
 }
 
@@ -28,4 +30,14 @@
 
 .button-display {
   margin:auto;
+}
+
+/* || RESPONSIVENESS || */
+@media screen and (max-width:1300px) {
+  .back-button{
+    border: 1px solid rgb(70, 70, 70);
+  }
+  .back-button:hover{
+    box-shadow: none;
+  }
 }
