@@ -8,9 +8,9 @@
   background-color: var(--lightmode-background-color);
 
   /* colors */
-  --lightmode-background-color: rgb(245, 245, 245);
+  --lightmode-background-color: rgb(255, 255, 255);
   --lightmode-text-color: rgb(37, 40, 59);
-  --lightmode-background-grid-color: rgb(230, 230, 230);
+  --lightmode-background-grid-color: rgb(240, 240, 240);
 
   --darkmode-background-color: rgb(40, 40, 40);
   --darkmode-text-color: rgb(200, 220, 240);
