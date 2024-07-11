@@ -5,11 +5,12 @@
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--lightmode-text-color);
+  background-color: var(--lightmode-background-color);
 
   /* colors */
-  --lightmode-background-color: rgb(235, 235, 235);
+  --lightmode-background-color: rgb(245, 245, 245);
   --lightmode-text-color: rgb(37, 40, 59);
-  --lightmode-background-grid-color: rgb(190, 190, 190);
+  --lightmode-background-grid-color: rgb(230, 230, 230);
 
   --darkmode-background-color: rgb(40, 40, 40);
   --darkmode-text-color: rgb(200, 220, 240);
