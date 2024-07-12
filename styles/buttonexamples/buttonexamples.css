@@ -59,22 +59,22 @@
   padding:1rem 4rem;
   border-radius: 0;
   border: none;
-  background-color: rgb(129, 218, 129);
-  color: rgb(0, 100, 13);
+  background-color: rgb(233,228,247);
+  color: rgb(128, 47, 222);
   font-size: 2rem;
   font-weight: 700;
-  box-shadow: 0 0 0 rgb(0, 100, 13);
+  box-shadow: 0 0 0 rgb(128, 47, 222);
   transition: all .4s;
 }
 .button-1:hover {
   /* border-radius: 10px; */
   transition: .2s;
   transform: translate(-10px, -10px);
-  box-shadow: 10px 10px 0 rgb(0, 100, 13);
+  box-shadow: 10px 10px 0 rgb(128, 47, 222);
 }
 .button-1:active {
   transform: translate(-5px, -5px);
-  box-shadow: 5px 5px 0 rgb(0, 100, 13);
+  box-shadow: 5px 5px 0 rgb(128, 47, 222);
 }
 
 
@@ -210,6 +210,39 @@
 .button-5:active {
   scale: .95;
 }
+
+
+.button-6 {
+  display: inline-flex;
+  height: 4rem;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #009543;
+  overflow: hidden;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.button-6:hover {
+  background-color: #00813a;
+}
+.button-6:active {
+  background-color: #006e25;
+}
+.button-6-text,
+.button-6-icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  color: white;
+  height: 100%;
+}
+.button-6-icon {
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 /* || BUTTONS 1 - 5 || */
 
 /* || RESPONSIVENESS || */
