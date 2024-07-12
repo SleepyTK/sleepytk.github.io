@@ -186,6 +186,30 @@
 .button-4:hover::before {
   transform: translateY(0);
 }
+
+
+.button-5 {
+  color: black;
+  background-color: white;
+  padding: .25rem 4rem;
+  border: none;
+  border-radius: 100px;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+  transition: all .3s;
+}
+.button-5:hover {
+  color: rgb(81, 194, 81);
+  text-shadow: 0 0 2px rgb(42, 182, 42);
+  box-shadow: 0 0 10px rgb(87, 224, 87);
+  padding: .275rem 4.4rem;
+  font-size: 1.7rem;
+}
+.button-5:active {
+  scale: .95;
+}
 /* || BUTTONS 1 - 5 || */
 
 /* || RESPONSIVENESS || */
