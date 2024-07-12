@@ -2,7 +2,6 @@
   counter-reset: cards;
 }
 
-
 .button-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -14,13 +13,16 @@
 .button-display {
   counter-increment: cards;
   position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
   border-radius: 0 10px 10px 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+  animation: fade-in 1.5s forwards;
+  opacity: 0;
+  transform: translateY(25px);
+  animation-delay: 500ms;
 }
 .button-display::before {
   content: counter(cards);
@@ -39,12 +41,21 @@
 }
 .button-display button {
   font-family: "Poppins";
+  cursor: pointer;
 }
 
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+    transform: translateY(25px);
+  } 100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
 /* || BUTTONS 1 - 5 || */
 .button-1 {
-  cursor: pointer;
   padding:1rem 4rem;
   border-radius: 0;
   border: none;
@@ -66,9 +77,8 @@
   box-shadow: 5px 5px 0 rgb(0, 100, 13);
 }
 
-.button-2 {
-  cursor: pointer;
 
+.button-2 {
   color: rgb(110, 7, 243);
   background-color: white;
 
@@ -87,6 +97,94 @@
 .button-2:active {
   transition: all 100ms;
   outline: 3px solid rgba(51, 51, 51, 0.15);
+}
+
+
+.button-3 {
+  position: relative;
+
+  padding: 1rem 4rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+
+  border: 3px solid rgb(142, 202, 230);
+  background-color: transparent;
+  color: rgb(142, 202, 230);
+  overflow: hidden;
+  transition: all .3s linear;
+}
+.button-3::before {
+  position: absolute;
+  
+  content: '';
+  background-color: rgb(142, 202, 230);
+  left: 0;
+  bottom: 0;
+
+  width: 16rem;
+  height: 6rem;
+  z-index: -1;
+  transform: translateX(-260px);
+  transition: all .3s linear;
+}
+.button-3::after {
+  position: absolute;
+  
+  content: '';
+  background-color: rgb(33, 158, 188);
+  left: 0;
+  bottom: 0;
+
+  width: 16rem;
+  height: 6rem;
+  z-index: -1;
+  transform: translateX(260px);
+  transition: all .3s linear;
+}
+.button-3:hover {
+  color: rgb(33, 158, 188);
+  border: 3px solid rgb(33, 158, 188);
+}
+.button-3:hover::before{
+  transform: translateX(0);
+}
+.button-3:active {
+  border: 3px solid rgb(10, 100, 170);
+  color: rgb(10, 100, 170);
+}
+.button-3:active::after{
+  transform: translateX(0);
+}
+
+
+.button-4 {
+  position: relative;
+  background-color: rgb(242,247,249);
+  color: black;
+
+  border: none;
+  border-radius: 14px;
+
+  padding: 1rem 4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  transition: all .2s;
+
+  overflow: hidden;
+}
+.button-4::before {
+  position: absolute;
+  content: 'button';
+  color: rgb(128, 47, 222);
+  transform: translateY(60px);
+  transition: all .4s;
+}
+.button-4:hover {
+  background-color: rgb(233,228,247);
+  color: transparent;
+}
+.button-4:hover::before {
+  transform: translateY(0);
 }
 /* || BUTTONS 1 - 5 || */
 
