@@ -247,8 +247,71 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-
 .button-7 {
+  display: inline-flex;
+  height: 4rem;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #007295;
+  overflow: hidden;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.button-7:hover {
+  background-color: #00607e;
+}
+.button-7:active {
+  background-color: #005772;
+}
+.button-7-text,
+.button-7-icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  color: white;
+  height: 100%;
+}
+.button-7-icon {
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.button-8 {
+  display: inline-flex;
+  height: 4rem;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #840095;
+  overflow: hidden;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.button-8:hover {
+  background-color: #740083;
+}
+.button-8:active {
+  background-color: #650072;
+}
+.button-8-text,
+.button-8-icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  color: white;
+  height: 100%;
+}
+.button-8-icon {
+  font-size: 1.75rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.button-9 {
   font-weight: 900;
   font-size: 2rem;
   padding: 1rem 3rem;
@@ -257,15 +320,15 @@
   border: none;
   transition: .3s all;
 }
-.button-7:hover {
+.button-9:hover {
   background-color: #232323;
   color: white;
 }
-.button-7:active {
+.button-9:active {
   border-radius: 10px;
 }
 
-.button-8 {
+.button-10 {
   font-weight: 300;
   font-size: 1.5rem;
   padding: 1rem 3rem;
@@ -277,13 +340,13 @@
   transform: translate(-5px, -5px);
   transition: .2s all;
 }
-.button-8:active {
+.button-10:active {
   transform: translate(0, 0);
   box-shadow: 0 0 0 black;
 }
 
 
-.button-9 {
+.button-11 {
   position: relative;
   font-weight: 400;
   font-size: 1.5rem;
@@ -295,7 +358,7 @@
   transition: .3s all;
   z-index: 1;
 }
-.button-9::after {
+.button-11::after {
   content: '';
   position: absolute;
   top: -100px;
@@ -306,10 +369,10 @@
   transition: .3s all;
   z-index: -1;
 }
-.button-9:hover {
+.button-11:hover {
   color: black;
 }
-.button-9:hover::after {
+.button-11:hover::after {
   top: 0;
 }
 
