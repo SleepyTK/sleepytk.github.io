@@ -65,6 +65,7 @@ html {
 .back-button {
   position: relative;
   background-color: white;
+  color: black;
 
   font-family: "Poppins";
   font-size: 1.2rem;
