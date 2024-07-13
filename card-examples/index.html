@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- calls script that loads in the head -->
+      <script src="../components/head/loadHead.js" defer></script>
+</head>
+<body>
+  <button onclick="scrollToTop()" id="back-to-top"></button>
+    <!-- adds grid background to the website -->
+    <div class="background-grid"></div>
+  <!-- grid for all the buttons -->
+  <script src="../components/cardexamples/loadCardExamples.js" defer></script>
+
+   <!-- ICON LIBRARY -->
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        var button = document.getElementById("back-to-top");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          button.classList.add("show");
+        } else {
+          button.classList.remove("show");
+        }
+    }
+    function scrollToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+</body>
+</html>
