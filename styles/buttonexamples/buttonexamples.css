@@ -428,6 +428,92 @@
   box-shadow: 0 5px 0 rgb(100, 0, 0);
 }
 
+
+.button-14 {
+  background: rgb(131,58,180);
+  background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  color: white;
+  padding: .5rem 4rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 300;
+  transition: all .25s ease;
+}
+.button-14:hover {
+  background: linear-gradient(-45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.button-15 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  color: black;
+  border: none;
+  letter-spacing: 2px;
+  display: inline-block;
+  background-color: white;
+  border: 2px black solid;
+
+  position: relative;
+}
+.button-15 span {
+  position: relative;
+  z-index: 3;
+}
+.button-15::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -3px;
+  width: calc(100% + 6px);
+  height: calc(100% - 10px);
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+.button-15::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+.button-15:hover::before {
+  transform: scaleY(0);
+}
+.button-15:hover::after {
+  transform: scaleX(0);
+}
+
+
+
+.button-16 {
+  filter: grayscale(100%);
+  background: rgb(131,58,180);
+  background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+  font-weight: 100;
+  transition: .3s all;
+}
+.button-16:hover {
+  filter: grayscale(0%);
+}
+.button-16:active {
+  letter-spacing: 4px;
+}
+
+
 /* || BUTTONS 1 - 5 || */
 
 /* || RESPONSIVENESS || */
