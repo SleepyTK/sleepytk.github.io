@@ -19,7 +19,7 @@
   --back-button-top-shadow: rgb(0, 0, 0, .125);
   --back-button-bottom-shadow: rgb(245, 245, 245);
   
-  --button-display-color: rgb(255, 255, 255);
+  --button-display-color: rgb(250, 250, 250);
 
   /* --main-background-color: rgb(40, 40, 40);
   --main-text-color: rgb(200, 220, 240);
@@ -86,44 +86,41 @@ html {
 
 /* CODE FOR EXAMPLE PAGES */
 .back-button {
-  position: relative;
+  position: fixed;
+
+  top: 2rem;
+  left: 2rem;
+  height: 3.5rem;
+  width: 9rem;
+
   background-color: var(--back-button-background-color);
   color: var(--back-button-color);
   
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: .25rem;
+
   font-family: "Poppins";
-  font-size: 1.2rem;
-  font-weight: 300;
-  padding: .75rem 3rem;
   cursor: pointer;
-  border: none;
-  border-radius: 6px;
+  border: 1px solid black;
+  border-radius: 100vw;
   text-shadow: 4px 4px rgb(0, 0, 0, .1) inset;
 
   transition: all .6s;
 }
-.back-button ion-icon {
-  transform: translate(0px, 0px);
-  font-size: 1.4rem;
-  color: var(--back-button-color);
-  /* change icon to icon */
+.back-button img {
+  height: 4.5rem;
 }
-.back-button:hover{
-  box-shadow: 4px 4px 4px var(--back-button-top-shadow) inset, -3px -3px 3px var(--back-button-bottom-shadow) inset;
-  transition: all .2s;
-}
+
 .header{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: 1rem;
 }
 .header-title h1 {
   font-family: 'Poppins';
-  font-weight: 300;
+  font-weight: 100;
+  font-size: 6rem;
 }
 #back-to-top {
   position: fixed;
@@ -156,17 +153,8 @@ html {
 
 /* || RESPOSIVENESS || */
 
-
 @media screen  and (max-width:1000px){
   .background-grid {
     background-size: 30px 30px;
-  }
-}
-@media screen and (max-width:550px) {
-  .header .header-title h1 {
-    font-size: 1.25rem;
-  }
-  .back-button {
-    padding: .5rem 2rem;
   }
 }

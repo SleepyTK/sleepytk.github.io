@@ -3,11 +3,14 @@
 }
 
 .button-grid {
+  border-top: 1px solid black;
+  padding-top: 1.25rem;
+  max-width: 940px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-auto-rows: 200px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
   gap: 1rem;
-  margin: 1rem;
+  margin: 0 auto;
 }
 
 .button-display {
@@ -17,27 +20,30 @@
   justify-content: center;
   align-items: center;
   background-color: var(--button-display-color);
-  border-radius: 0 10px 10px 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+  border-radius: 20px;
   animation: fade-in 1.5s forwards;
   opacity: 0;
   transform: translateY(25px);
   animation-delay: 500ms;
 }
 .button-display::before {
+  display: flex;
   content: counter(cards);
   top: 0;
   left: 0;
   position: absolute;
   font-family: 'Poppins';
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: .5rem .5rem;
+  background-color: rgb(80, 80, 80);
+  color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, .15);
   border-radius: 100%;
-  height: 2.25rem;
-  width: 2.25rem;
-  text-align: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
 }
 .button-display button {
   font-family: "Poppins";
@@ -514,7 +520,7 @@
   letter-spacing: 4px;
 }
 
-.button-17, .button-17-2 {
+.button-17 {
   font-family: 'Recoleta', sans-serif !important;
   font-size: 1.5rem;
   border: 1px solid #151515;
@@ -530,19 +536,8 @@
   color: #151515;
   background-color: white;
 }
-.button-17-2 {
-  color: #151515;
-  background-color: white;
-}
-.button-17-2:hover {
-  background-color: #151515;
-  color: white;
-}
 .button-17:active {
   background-color: rgba(255, 255, 255, 0.8);
-}
-.button-17-2:active {
-  background-color: #232323;
 }
 
 
@@ -594,14 +589,120 @@
   transform: scale(1.025);
 }
 
-/* || BUTTONS 1 - 5 || */
+.button-20,.button-21 {
+  border: none;
+  background-color: transparent;
+}
+#bag-button, #menu-button {
+  height: 8rem;
+  width: 8rem;
+}
+#bag, #bag-button-text, #menu-button-text, #menu-button-icon{ transition: all .4s ease;}
+#bag, #menu-button-icon {
+  transform: translateY(40px);
+  opacity: 0;
+}
+#bag-button:hover > #bag,
+#menu-button:hover > #menu-button-icon {
+  transform: translateY(0px);
+  opacity: 1;
+}
+#bag-button:hover > #bag-button-text,
+#menu-button:hover > #menu-button-text {
+  opacity: 0;
+}
+
+
+
 
 /* || RESPONSIVENESS || */
-@media screen and (max-width:1300px) {
+@media  screen and (max-width:1380px) {
   .back-button{
-    border: 1px solid rgb(70, 70, 70);
+    position: relative;
+    width: 70px;
+    height: 70px;
+
+    top: 0rem;
+    left: 0rem;
   }
-  .back-button:hover{
-    box-shadow: none;
+  .header {
+    width: 940px;
+    margin-inline: auto;
+    justify-content: space-between;
+  }
+}
+@media  screen and (max-width:1000px) {
+  .button-grid, .header {
+    max-width: calc(100% - 4rem);
+  }
+  .header-title h1 {
+    font-size: 4rem;
+  }
+  .back-button {
+    height: 60px;
+    width: 60px;
+  }
+  .back-button img {
+    height: 3.75rem;
+  }
+}
+@media  screen and (max-width:690px) {
+  .header-title h1 {
+    font-size: 3rem;
+  }
+  .back-button {
+    height: 50px;
+    width: 50px;
+  }
+  .back-button img {
+    height: 3rem;
+  }
+}
+@media  screen and (max-width:550px) {
+  .header-title h1 {
+    font-size: 2.75rem;
+  }
+  .back-button {
+    height: 45px;
+    width: 45px;
+  }
+  .back-button img {
+    height: 2.5rem;
+  }
+}
+@media  screen and (max-width:500px) {
+  .header-title h1 {
+    font-size: 2.5rem;
+  }
+  .back-button {
+    height: 40px;
+    width: 40px;
+  }
+  .back-button img {
+    height: 2rem;
+  }
+}
+@media  screen and (max-width:450px) {
+  .header-title h1 {
+    font-size: 2.1rem;
+  }
+  .back-button {
+    height: 37px;
+    width: 37px;
+  }
+  .back-button img {
+    height: 2rem;
+  }
+}
+@media  screen and (max-width:400px) {
+  .header-title h1 {
+    font-size: 1.9rem;
+  }
+  .back-button {
+    height: 37px;
+    width: 37px;
+  }
+  .back-button img {
+    height: 1.9rem;
   }
 }
