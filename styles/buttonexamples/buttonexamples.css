@@ -69,14 +69,13 @@ a {
 .button-1 {
   filter: grayscale(1000);
   transition: all .4s ease;
-  scale: 1.5;
 }
 .button-1:hover {
 filter: grayscale(0);
-scale: 1.55;
+scale: 1.025;
 }
 .button-1:active {
-  scale: 1.45;
+  scale: 1;
 }
 
 
