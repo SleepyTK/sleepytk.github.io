@@ -630,7 +630,7 @@ scale: 1.025;
     max-width: calc(100% - 4rem);
   }
   .header-title h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
   .back-button {
     height: 60px;
@@ -642,7 +642,7 @@ scale: 1.025;
 }
 @media  screen and (max-width:690px) {
   .header-title h1 {
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
   .back-button {
     height: 50px;
@@ -654,7 +654,7 @@ scale: 1.025;
 }
 @media  screen and (max-width:550px) {
   .header-title h1 {
-    font-size: 2.75rem;
+    font-size: 2.65rem;
   }
   .back-button {
     height: 45px;
@@ -666,7 +666,7 @@ scale: 1.025;
 }
 @media  screen and (max-width:500px) {
   .header-title h1 {
-    font-size: 2.5rem;
+    font-size: 2.32rem;
   }
   .back-button {
     height: 40px;
@@ -678,7 +678,7 @@ scale: 1.025;
 }
 @media  screen and (max-width:450px) {
   .header-title h1 {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
   .back-button {
     height: 37px;
@@ -690,7 +690,7 @@ scale: 1.025;
 }
 @media  screen and (max-width:400px) {
   .header-title h1 {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
   .back-button {
     height: 37px;
