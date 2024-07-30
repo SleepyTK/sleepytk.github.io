@@ -625,6 +625,9 @@ scale: 1.025;
     margin-inline: auto;
     justify-content: space-between;
   }
+  .popular-websites {
+    filter: grayscale(0);
+  }
 }
 @media  screen and (max-width:1000px) {
   .button-grid, .header {
