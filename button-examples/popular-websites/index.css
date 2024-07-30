@@ -19,6 +19,317 @@
   margin-left: .25rem;
 }
 
+a {
+  text-decoration: none !important;
+  user-select: none  !important;
+  cursor: pointer;
+}
+.amazon-button-1 {
+  user-select: none;
+
+  background-color: #ffd814;
+  padding-block: .35rem;
+  width: 12rem;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 10rem;
+  font-weight: 500;
+}
+.amazon-button-1:hover {
+  background-color: #f7ca00;
+}
+.amazon-button-1:active {
+  background-color: #f0b800;
+  outline: 3px solid #007185;
+  outline-offset: 2px;
+}
+
+.amazon-button-2 {
+  user-select: none;
+
+  background-color: #ffa41c;
+  padding-block: .35rem;
+  width: 12rem;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 10rem;
+  font-weight: 500;
+}
+.amazon-button-2:hover {
+  background-color: #fa8900;
+}
+.amazon-button-2:active {
+  background-color: #ffa41c;
+  outline: 3px solid #007185;
+  outline-offset: 2px;
+}
+
+.amazon-button-3 {
+  user-select: none;
+  font-size: .95rem;
+  padding-block: .35rem;
+  width: 14rem;
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(213, 217, 217, .5);
+  border-radius: 8px;
+  font-weight: 500;
+  border: 1px solid #d5d9d9;
+  background-color: #fff;
+}
+.amazon-button-3:hover {
+  background-color: #f7fafa;
+  border-color: #d5d9d9;
+}
+.amazon-button-3:active, :focus {
+  box-shadow: none;
+  outline: solid 3px #C8F3FA;
+  border-color: #008296;
+  background-color: #EDFDFF;
+}
+.amazon-button-3:focus-visible {
+  border: 1px solid black;
+}
+
+.amazon-button-4 {
+  background-color: #febd69;
+  width: 60px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.amazon-button-4:hover {
+  background-color: #f3a847;
+}
+
+.amazon-button-5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  border-radius: 8px;
+  padding: 14px 18px;
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  margin-inline: 1rem;
+
+  user-select: none;
+}
+.amazon-button-5 > div > span {
+  color: #565959!important;
+  font-size: .85rem;
+}
+.amazon-button-5 > div > h2 {
+  font-size: 1.05rem;
+  text-rendering: optimizeLegibility;
+  line-height: 28px;
+}
+.amazon-button-5 > img {
+  max-width: 25%;
+  vertical-align: top;
+  margin-right: .25rem;
+}
+.amazon-button-5:hover {
+  background-color: #eee;
+}
+
+.amazon-button-6 {
+  user-select: none;
+  letter-spacing: .5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  padding: .5rem .4rem;
+  width: 210px;
+  margin: 5px 2px;
+  background-image: -webkit-linear-gradient(30deg, #2C88AE 40%, #00A8E1 85%, #00A8E1 74px);
+}
+.amazon-button-6:active {
+  width: 230px;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+
+
+
+.google-button-1 {
+  border-radius: 9999rem;
+  border: 1px solid #d2d2d2;
+  color: #0b57d0;
+  background-color: #fff;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+
+  height: 40px;
+  padding: 0 30px;
+  line-height: 20px;
+
+  user-select: none;
+}
+.google-button-1:hover {
+  background-color: #E8F0FE;
+}
+.google-button-1:active {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.google-button-2 {
+  background-color: #0b57d0;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 9999rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 40px;
+  padding: 0 65px;
+
+  user-select: none;
+}
+.google-button-2:hover {
+  background-color: #001d35;
+  border-color: #001d35;
+}
+.google-button-2:active {
+  border-color: white;
+  outline: 2px solid #0b57d0;
+}
+
+.google-button-3 {
+  background-color: #1A73E8;
+  color: #fff;
+  border-radius: 4px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  height: 44px;
+  padding: 0 45px;
+
+  user-select: none;
+}
+.google-button-3:hover {
+  background-color: #1B66C9;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+}
+.google-button-3:active {
+  background-color: #1C58A8;
+  transition: all .2s;
+}
+
+.google-button-4 {
+  background-color: #F8F9FA;
+  border: 1px solid #F8F9FA;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.google-button-4:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+.google-button-4:active {
+  border-color:#4285f4;
+}
+
+.google-button-5 {
+  background-color: #fff;
+  color: #5f6368;
+  border: 1px solid #e8eaed;
+  border-radius: 9999rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 1.05rem;
+
+  height: 52px;
+  padding: 0 1.75rem;
+}
+.google-button-5 > div {
+  margin-right: .5rem;
+}
+.google-button-5:hover {
+  background-color: #E8EAED;
+}
+.google-button-5:active {
+  border-color: #202124;
+  background-color: #202124;
+  color: #fff;
+}
+.google-button-5:active > div > svg {
+  fill: #fff !important;
+}
+
+
+.google-button-6 {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),
+  0px 2px 2px 0px rgba(0,0,0,0.14),
+  0px 1px 5px 0px rgba(0,0,0,0.12),
+  0 1px 2px 0 rgba(60, 64, 67, .3),
+  0 1px 3px 1px rgba(60, 64, 67, .15);
+
+  padding: .85rem 1.5rem;
+  border-radius: 1rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all .4s ease;
+}
+.google-button-6 > svg {
+  margin-right: .8rem;
+}
+.google-button-6:hover {
+  background-color: #EDF1FA;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),
+  0px 4px 5px 0px rgba(0,0,0,0.14), 
+  0px 1px 10px 0px rgba(0,0,0,0.12), 
+  0 1px 2px 0 rgba(60, 64, 67, .3), 
+  0 2px 6px 2px rgba(60, 64, 67, .15);
+}
+.google-button-6:active {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),
+  0px 2px 2px 0px rgba(0,0,0,0.14),
+  0px 1px 5px 0px rgba(0,0,0,0.12),
+  0 1px 2px 0 rgba(60, 64, 67, .3),
+  0 1px 3px 1px rgba(60, 64, 67, .15);
+}
+
+
 
 @media  screen and (max-width:1000px) {
   .button-grid > *:first-child {

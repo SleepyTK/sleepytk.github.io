@@ -23,6 +23,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid rgb(245, 245, 245);
   background-color: var(--button-display-color);
   border-radius: 20px;
   animation: fade-in 1.5s forwards;
@@ -66,20 +67,20 @@ a {
 }
 
 /* || BUTTONS 1 - 5 || */
-.button-1 {
+.popular-websites {
   filter: grayscale(1000);
   transition: all .4s ease;
 }
-.button-1:hover {
+.popular-websites:hover {
 filter: grayscale(0);
 scale: 1.025;
 }
-.button-1:active {
+.popular-websites:active {
   scale: 1;
 }
 
 
-.button-2 {
+/* .button-2 {
   color: rgb(110, 7, 243);
   background-color: transparent;
 
@@ -158,10 +159,10 @@ scale: 1.025;
 }
 .button-3:active::before{
   transform: translateX(200px);
-}
+} */
 
 
-.button-4 {
+/* .button-4 {
   position: relative;
   background-color: rgb(242,247,249);
   color: black;
@@ -213,10 +214,10 @@ scale: 1.025;
 }
 .button-5:active {
   scale: .95;
-}
+} */
 
 
-.button-6 {
+/* .button-6 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
   display: inline-flex;
   height: 4rem;
@@ -399,7 +400,7 @@ scale: 1.025;
 .button-12 ion-icon {
   padding-inline: .5rem;
   height: 1.4rem;
-}
+} */
 
 
 
