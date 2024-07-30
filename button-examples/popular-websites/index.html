@@ -9,6 +9,7 @@
   <title>SleepyTK's webdesign</title>
 </head>
 <body>
+  <button onclick="scrollToTop()" id="back-to-top"></button>
   <div class="header">
     <a class="back-button" href="../">
       <img src="../../svg/buttonexamples/arrow-left.svg" alt="">
@@ -68,5 +69,21 @@
       </a>
     </div>
   </div>
+
+
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        var button = document.getElementById("back-to-top");
+        document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ? button.classList.add("show") : button.classList.remove("show");
+    }
+
+    function scrollToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
 </body>
 </html>
