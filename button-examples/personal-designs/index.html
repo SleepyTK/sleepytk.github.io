@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/index/index.css">
+  <link rel="stylesheet" href="../../styles/buttonexamples/buttonexamples.css">
+  <link rel="stylesheet" href="index.css">
+  <title>SleepyTK's webdesign</title>
+</head>
+<body>
+  <button onclick="scrollToTop()" id="back-to-top"></button>
+  <div class="header">
+    <a class="back-button" href="../">
+      <img src="../../svg/buttonexamples/arrow-left.svg" alt="">
+    </a>
+  
+    <div class="header-title"><h1>PERSONAL DESIGNS</h1></div>
+  </div>
+
+  <div class="button-grid" style="margin: .5rem auto;">
+    <div> - Simple Light</div>
+    <div class="button-display"><a class="poppins simple-light-button-1"><span style="user-select: none;">button</span></a></div>
+    <div class="button-display"><a class="poppins simple-light-button-2"><span style="user-select: none;">button</span></a></div>
+    <div class="button-display"><a class="poppins simple-light-button-3"><span style="user-select: none;">button</span></a></div>
+    <div class="button-display"><a class="poppins simple-light-button-4"><span style="user-select: none;">button</span></a></div>
+    <div class="button-display"><a class="poppins simple-light-button-5"><span style="user-select: none;">button</span></a></div>
+    <div class="button-display"><a class="poppins simple-light-button-6"><span style="user-select: none;">button</span></a></div>
+    <div class="button-display"><a class="poppins simple-light-button-7"><span style="user-select: none;">button</span></a></div>
+    <div class="button-display"><a class="poppins simple-light-button-8"><span style="user-select: none;">button</span></a></div>
+    <div class="button-display"><a class="poppins simple-light-button-9"><span style="user-select: none;">button</span></a></div>
+  </div>
+
+  <div class="button-grid">
+    <div> - Simple Dark</div>
+    <div class="button-display dark"><a class="poppins simple-dark-button-1"><span style="user-select: none;">button</span></a></div>
+    <div class="button-display dark"><a class="poppins simple-dark-button-2"><span style="user-select: none;">button</span></a></div>
+    <div class="button-display dark"><a class="poppins simple-dark-button-3"><span style="user-select: none;">button</span></a></div>
+    <div class="button-display dark"><a class="poppins simple-dark-button-4"><span style="user-select: none;">button</span></a></div>
+    <div class="button-display dark"><a class="poppins simple-dark-button-5"><span style="user-select: none;">button</span></a></div>
+    <div class="button-display dark"><a class="poppins simple-dark-button-6"><span style="user-select: none;">button</span></a></div>
+  </div>
+
+
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        var button = document.getElementById("back-to-top");
+        document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ? button.classList.add("show") : button.classList.remove("show");
+    }
+    function scrollToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+</body>
+</html>
