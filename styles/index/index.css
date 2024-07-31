@@ -114,21 +114,24 @@ html {
   text-shadow: 4px 4px rgb(0, 0, 0, .1) inset;
 
   transition: all .6s;
-}
-.back-button img {
-  height: 4.5rem;
+
+  & img {
+    height: 4.5rem;
+  }
 }
 
 .header{
   display: flex;
   justify-content: center;
   align-items: center;
+
+  & h1 {
+    font-family: 'Poppins';
+    font-weight: 100;
+    font-size: 6rem;
+  }
 }
-.header-title h1 {
-  font-family: 'Poppins';
-  font-weight: 300;
-  font-size: 6rem;
-}
+
 #back-to-top {
   position: fixed;
   bottom: 1.5rem;

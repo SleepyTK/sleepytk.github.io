@@ -633,8 +633,10 @@ scale: 1.025;
   .button-grid, .header {
     max-width: calc(100% - 4rem);
   }
-  .header-title h1 {
-    font-size: 3.8rem;
+  .header { 
+    & h1 {
+      font-size: 3.8rem;
+    }
   }
   .back-button {
     height: 60px;
@@ -645,8 +647,10 @@ scale: 1.025;
   }
 }
 @media  screen and (max-width:690px) {
-  .header-title h1 {
-    font-size: 2.9rem;
+  .header { 
+    & h1 {
+      font-size:2.9rem;
+    }
   }
   .back-button {
     height: 50px;
@@ -657,8 +661,10 @@ scale: 1.025;
   }
 }
 @media  screen and (max-width:550px) {
-  .header-title h1 {
-    font-size: 2.65rem;
+  .header { 
+    & h1 {
+      font-size: 2.65rem;
+    }
   }
   .back-button {
     height: 45px;
@@ -669,8 +675,10 @@ scale: 1.025;
   }
 }
 @media  screen and (max-width:500px) {
-  .header-title h1 {
-    font-size: 2.32rem;
+  .header { 
+    & h1 {
+      font-size: 2.3rem;
+    }
   }
   .back-button {
     height: 40px;
@@ -681,8 +689,10 @@ scale: 1.025;
   }
 }
 @media  screen and (max-width:450px) {
-  .header-title h1 {
-    font-size: 2rem;
+  .header { 
+    & h1 {
+      font-size: 2rem;
+    }
   }
   .back-button {
     height: 37px;
@@ -693,8 +703,10 @@ scale: 1.025;
   }
 }
 @media  screen and (max-width:400px) {
-  .header-title h1 {
-    font-size: 1.8rem;
+  .header { 
+    & h1 {
+      font-size: 1.8rem;
+    }
   }
   .back-button {
     height: 37px;
