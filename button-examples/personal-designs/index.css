@@ -30,6 +30,24 @@ a {
   font-size: 1rem;
 }
 
+.test-gradient {
+  background: linear-gradient(135deg, #cac3f6, #00bae2);
+  position: relative;
+  &::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: -.5rem;
+    left: -.5rem;
+    border-radius: 20px;
+    position: absolute;
+    background: url(https://github.com/SleepyTK/images/blob/main/light-noise.png?raw=true) center;
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    opacity: .3;
+  }
+}
 /* 
  -- SIMPLE LIGHT BUTTONS --
 */
