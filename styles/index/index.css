@@ -97,8 +97,8 @@ html {
 
   top: 2rem;
   left: 2rem;
-  height: 3.5rem;
-  width: 9rem;
+  height: 4rem;
+  width: 4rem;
 
   background-color: var(--back-button-background-color);
   color: var(--back-button-color);
@@ -116,7 +116,7 @@ html {
   transition: all .6s;
 
   & img {
-    height: 4.5rem;
+    height: 3.5rem;
   }
 }
 
