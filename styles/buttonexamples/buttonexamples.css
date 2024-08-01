@@ -25,7 +25,6 @@ a {
   align-items: center;
   border: 1px solid rgb(245, 245, 245);
   background-color: var(--button-display-color);
-  border-radius: 20px;
   animation: fade-in 1.5s forwards;
   opacity: 0;
   transform: translateY(25px);
