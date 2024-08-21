@@ -16,7 +16,7 @@
   <script src="components/content/loadContent.js" defer></script>
 </body>
 <script>
-  window.onscroll = function() {scrollFunctionNav(), scrollFunctionNavContent()};
+  window.onscroll = function() {scrollFunctionNav(), scrollFunctionNavContent(), scrollFunctionContent()};
 
   function scrollFunctionNav() {
       var navbar = document.getElementById("navbar");
@@ -32,6 +32,14 @@
         navbar.classList.add("navbar-content-topright");
       } else {
         navbar.classList.remove("navbar-content-topright");
+      }
+  }
+  function scrollFunctionContent() {
+      var content = document.getElementById("main-page-content");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        content.classList.add("content-shift");
+      } else {
+        content.classList.remove("content-shift");
       }
   }
   function scrollToTop() {

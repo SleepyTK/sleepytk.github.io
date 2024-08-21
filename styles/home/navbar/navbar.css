@@ -41,7 +41,7 @@
 }
 .banner .slider {
   position: absolute;
-  transition: all 1 s ease;
+  transition: all 1s ease;
   width: 200px;
   height: 250px;
   top: 10%;

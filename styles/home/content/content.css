@@ -1,9 +1,15 @@
+.content-shift {
+  transform: translateY(-65vh);
+  /* still need to fix empty space when translating (negative margin doesn't work) */
+}
+
 .content {
   margin-inline: auto;
   text-align: left;
   width: 1000px;
   margin-top: 1rem;
   font-size: 1.5rem;
+  transition: all 1s ease;
 }
 @media screen and (max-width:1080px) {
   .content {
