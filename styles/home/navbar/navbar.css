@@ -1,3 +1,37 @@
+.navbar-topleft {
+  scale: .275;
+  position: fixed !important;
+  translate: -37.5vw -15vh;
+  transition: all 1s ease;
+}
+.navbar-content-topright {
+  scale: .5;
+  position: fixed !important;
+  translate: 27.5vw -74.5vh;
+  transition: all 1s ease;
+  .info {
+    opacity: 0;
+    transition: all .25s ease;
+  }
+}
+@media screen and (max-width:1800px) {.navbar-content-topright{translate: 27.5vw -75vh;}}
+@media screen and (max-width:1700px) {.navbar-content-topright{translate: 26.7vw -75vh;}}
+@media screen and (max-width:1600px) {.navbar-content-topright{translate: 28.3vw -58vh;}}
+@media screen and (max-width:1500px) {.navbar-content-topright{translate: 26.5vw -58vh;}}
+@media screen and (max-width:1400px) {.navbar-content-topright{translate: 25.0vw -58vh;}}
+@media screen and (max-width:1300px) {.navbar-content-topright{translate: 26.1vw -50vh;}}
+@media screen and (max-width:1200px) {.navbar-content-topright{translate: 24.3vw -50vh;}}
+@media screen and (max-width:1100px) {.navbar-content-topright{translate: 21.0vw -48vh;}}
+@media screen and (max-width:1000px) {.navbar-content-topright{translate: 31.0vw -40vh; scale: .6;}}
+@media screen and (max-width:900px)  {.navbar-content-topright{translate: 29.0vw -40vh;}}
+@media screen and (max-width:850px)  {.navbar-content-topright{translate: 42.5vw -28vh; scale: .9;} .navbar-topleft{translate: -32vw -9vh !important; scale: .5;}}
+@media screen and (max-width:800px)  {.navbar-content-topright{translate: 40.5vw -28vh;}}
+@media screen and (max-width:700px)  {.navbar-content-topright{translate: 30.3vw -30vh; scale: .65;} .navbar-topleft{translate: -33vw -10vh !important; scale: .35;}}
+@media screen and (max-width:600px)  {.navbar-content-topright{translate: 23.5vw -30vh; scale: .60;}}
+@media screen and (max-width:550px)  {.navbar-content-topright{translate: 23.5vw -29vh; scale: .60;}}
+@media screen and (max-width:500px)  {.navbar-content-topright{translate: 21.0vw -29vh;}.navbar-topleft{translate: -30vw -10vh !important;}}
+@media screen and (max-width:450px)  {.navbar-content-topright{translate: 21.0vw -28vh;}.navbar-topleft{translate: -30vw -10vh !important;}}
+@media screen and (max-width:400px)  {.navbar-content-topright{translate: 21.0vw -28vh;}}
 .banner {
   width: 100%;
   height: 100vh;
@@ -7,6 +41,7 @@
 }
 .banner .slider {
   position: absolute;
+  transition: all 1 s ease;
   width: 200px;
   height: 250px;
   top: 10%;
@@ -14,6 +49,19 @@
   transform-style: preserve-3d;
   transform: perspective(1000px);
   animation: autoRun 30s linear infinite;
+}
+/* .slider {
+  animation: slider linear;
+  animation-timeline: scroll();
+
+  --x-direction:0;
+  --y-direction:-1000px;
+} */
+
+@keyframes slider {
+  to {
+    transform: translate(var(--x-direction), var(--y-direction));
+  }
 }
 @keyframes autoRun {
   from {
@@ -60,6 +108,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: start;
+  transition: all 1s ease;
 }
 .banner .nav-content h1 {
   font-family: 'ICA Rubrik';
@@ -99,6 +148,7 @@
     width: calc(200px * 1.30);
     height: calc(250px * 1.30);
     left: calc(50% - 130px);
+    transition: all 1s ease;
   }
 }
 @media screen and (max-width:2561px) {
@@ -129,7 +179,8 @@
   /* makes everything 25% smaller than initial size */
   .banner .slider .item {  transform: 
     rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
-    translateZ(calc(550px * 0.75));}
+    translateZ(calc(550px * 0.75));
+  }
   
   .banner .slider {
     width: calc(200px * 0.75);
@@ -174,6 +225,10 @@
   .banner .nav-content .info h2{
     font-size: 2.5rem;
   }
+    /* sizes for scroll effect */
+    .navbar-topleft {
+      translate: -36vw -11vh;
+    }
 }
 @media screen and (max-width:1000px) {
   /* makes everything 45% smaller than initial size */

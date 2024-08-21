@@ -7,10 +7,36 @@
 <body>
   <!-- adds grid background to the website -->
   <div class="background-grid"></div>
+
   <!-- calls script that loads in the navbar -->
   <script src="components/navbar/loadNavbar.js" defer></script>
+
 
   <!-- calls script that loads in the content -->
   <script src="components/content/loadContent.js" defer></script>
 </body>
+<script>
+  window.onscroll = function() {scrollFunctionNav(), scrollFunctionNavContent()};
+
+  function scrollFunctionNav() {
+      var navbar = document.getElementById("navbar");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        navbar.classList.add("navbar-topleft");
+      } else {
+        navbar.classList.remove("navbar-topleft");
+      }
+  }
+  function scrollFunctionNavContent() {
+      var navbar = document.getElementById("navbar-content");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        navbar.classList.add("navbar-content-topright");
+      } else {
+        navbar.classList.remove("navbar-content-topright");
+      }
+  }
+  function scrollToTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
 </html>

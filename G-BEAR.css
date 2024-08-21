@@ -1,0 +1,178 @@
+/* imports */
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.cdnfonts.com/css/roboto');
+
+/* G - GLOBAL */
+:root{
+  /* colors */
+  --clr-white:hsl(0, 0%, 100%);
+  --clr-off-white:hsl(0, 0%, 95%);
+  --clr-text:hsl(240, 90%, 10%);
+
+  --clr-red-400:hsl(341, 100%, 50%);
+  --clr-red-300:hsl(341, 100%, 65%);
+  --clr-green-400:hsl(104, 56%, 50%);
+  --clr-green-300:hsl(104, 56%, 65%);
+  --clr-blue-400:hsl(207, 84%, 50%);
+  --clr-blue-300:hsl(207, 84%, 65%);
+
+  --clr-shadow-500: hsla(0, 0%, 5%, 0.9);
+  --clr-shadow-400: hsla(0, 0%, 5%, 0.8);
+  --clr-shadow-300: hsla(0, 0%, 5%, 0.7);
+  --clr-shadow-200: hsla(0, 0%, 5%, 0.6);
+  --clr-shadow-100: hsla(0, 0%, 5%, 0.5);
+
+  /* font-families */
+  --ff-regular:'Poppins', sans-serif;
+  --ff-accent:'Roboto', serif;
+
+  /* font-weights */
+  --fw-thin:300;
+  --fw-light:400;
+  --fw-regular:500;
+  --fw-bold:700;
+  --fw-black:900;
+
+  /* font-sizes */
+  --fs-100: .75rem;
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.375rem;
+  --fs-600: 1.75rem;
+  --fs-700: 2.25rem;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: var(--ff-regular);
+}
+
+/* B - BLOCK */
+.grid{
+  display: grid;
+  justify-content: center;
+  align-items: start;
+
+  grid-template-columns: repeat(auto-fit, 300px);
+  margin: 2rem;
+  gap: 2rem;
+}
+
+/* B - BLOCK */
+.card {
+  /* placeholder colors if attributes don't work */
+  --_shadow: var(--shadow, hsl(0, 100%, 75%));
+  --_button-shadow: var(--button-shadow, hsl(0, 100%, 75%));
+
+  position: relative;
+
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+  width:300px;
+  padding:10px;
+
+  display:flex;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+
+  box-shadow: 0 0 1.5rem var(--_shadow);
+
+  border-radius: .5rem;
+  background: var(--clr-white);
+
+  /* E - ELEMENTS */
+  .card__image {
+    width:280px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .card__description {
+    margin-block: .5rem;
+    user-select: none;
+
+    .card__description--title {
+      font-size: var(--fs-600);
+      font-weight: var(--fw-regular);
+    }
+
+    .card__description--text {
+      font-size: var(--fs-100);
+      font-weight: var(--fw-thin);
+    }
+  }
+
+  .card__button {
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+    background: var(--clr-off-white);
+
+    padding: .75rem 4rem;
+    border-radius: 9rem;
+    border: none;
+
+    cursor: pointer;
+    box-shadow: 0 3px var(--_button-shadow);
+    margin-block: 1rem;
+    transition: all .25s ease-in-out;
+
+    &:hover {
+      translate: 0 -3px;
+      box-shadow: 0 6px var(--_button-shadow);
+    }
+    &:active {
+      translate: 0 1px;
+      box-shadow: 0 2px var(--_button-shadow);
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    top: -1rem;
+    width: 100%;
+    height: 100%;
+    background: var(--_shadow);
+    border-radius: .5rem;
+    z-index: -1;
+    transition: .25s ease-in-out all;
+  }
+
+  &:hover {
+    &::before {
+      z-index: -2;
+      translate: .15rem .15rem;
+    }
+  }
+}
+/* A - ATTRIBUTES */
+.card__red {
+  --shadow: var(--clr-red-300, red);
+  --button-shadow: var(--clr-red-300, red);
+}
+.card__green {
+  --shadow: var(--clr-green-300, green);
+  --button-shadow: var(--clr-green-300, green);
+}
+.card__blue {
+  --shadow: var(--clr-blue-300, blue);
+  --button-shadow: var(--clr-blue-300, blue);
+}
+
+
+/* R - RESPONSIVENESS */
+@media screen and (max-width:1400px) {
+  .grid {
+    grid-template-columns: 300px 300px;
+  }
+}
+@media screen and (max-width:1000px) {
+  .grid {
+    grid-template-columns: 300px;
+  }
+}
