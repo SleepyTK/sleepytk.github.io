@@ -39,4 +39,31 @@
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 </script>
+<script>
+  function changeLanguage(lang, sectionKey) {
+    // Hide all language content for the specified section
+    document.querySelectorAll(`.content-text[data-key="${sectionKey}"] .lang-content`).forEach(el => {
+      el.style.display = 'none';
+    });
+
+    // Show the selected language content for the specified section
+    document.querySelectorAll(`.content-text[data-key="${sectionKey}"] .lang-${lang.toLowerCase()}`).forEach(el => {
+      el.style.display = 'inline';
+    });
+  }
+
+  function setDefaultLanguage() {
+    const userLang = navigator.language || navigator.userLanguage; // Get user's language preference
+    const language = userLang.split('-')[0].toUpperCase(); // Extract language code (e.g., 'en', 'nl', 'jp')
+    
+    // Set default language for all sections based on user's language preference
+    document.querySelectorAll('.content-text').forEach(section => {
+      const key = section.getAttribute('data-key');
+      changeLanguage(language, key);
+    });
+  }
+
+  // Call the function to set the default language
+  setDefaultLanguage();
+</script>
 </html>
