@@ -1,6 +1,47 @@
 .content {
   margin-inline: auto;
-  text-align: center;
+  text-align: left;
+  width: 1000px;
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
+@media screen and (max-width:1080px) {
+  .content {
+    width: 100%;
+    padding-inline: 2rem;
+    font-size: 1rem;
+  }
+}
+
+.content-head {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+
+  .w-100{
+    width: 100px;
+  }
+  .w-125{
+    width: 125px;
+  }
+
+  .language-button {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: var(--main-text-color);
+    
+    height: 36px;
+    font-size: 1.25rem;
+    font-weight: 400;
+  
+    border: 1px solid #ededed;
+    border-radius: .25rem;
+    margin-inline: -.35rem;
+    &:hover {
+      font-weight: 700;
+    }
+  }
+}
+
+
