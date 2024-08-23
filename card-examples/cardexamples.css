@@ -1,0 +1,110 @@
+/* || RESPONSIVENESS || */
+@media  screen and (max-width:1380px) {
+  .back-button{
+    position: relative !important;
+    width: 70px !important;
+    height: 70px !important;
+
+    top: 0rem !important;
+    left: 0rem !important;
+  }
+  .header {
+    width: 940px !important;
+    margin-inline: auto !important;
+    justify-content: space-between !important;
+  }
+  .button-card {
+    filter: grayscale(0);
+  }
+}
+@media  screen and (max-width:1000px) {
+  .button-grid, .header {
+    max-width: calc(100% - 4rem) !important;
+  }
+  .header { 
+    & h1 {
+      font-size: 3.8rem !important;
+    }
+  }
+  .back-button {
+    height: 60px !important;
+    width: 60px !important;
+  }
+  .back-button img {
+    height: 3.75rem !important;
+  }
+}
+@media  screen and (max-width:690px) {
+  .header { 
+    margin-top: .25rem !important;
+    & h1 {
+      font-size:2.9rem !important;
+    }
+  }
+  .back-button {
+    height: 50px !important;
+    width: 50px !important;
+  }
+  .back-button img {
+    height: 3rem !important;
+  }
+}
+@media  screen and (max-width:550px) {
+  .header { 
+    margin-top: .4rem !important;
+    & h1 {
+      font-size: 2.65rem !important;
+    }
+  }
+  .back-button {
+    height: 45px !important;
+    width: 45px !important;
+  }
+  .back-button img {
+    height: 2.5rem !important;
+  }
+}
+@media  screen and (max-width:500px) {
+  .header { 
+    & h1 {
+      font-size: 2.3rem !important;
+    }
+  }
+  .back-button {
+    height: 40px !important;
+    width: 40px !important;
+  }
+  .back-button img {
+    height: 2rem !important;
+  }
+}
+@media  screen and (max-width:450px) {
+  .header { 
+    margin-top: .6rem !important;
+    margin-bottom: .2rem !important;
+    & h1 {
+      font-size: 2rem !important;
+    }
+  }
+  .back-button {
+    height: 37px !important;
+    width: 37px !important;
+  }
+  .back-button img {
+    height: 2rem !important;
+  }
+}
+@media  screen and (max-width:400px) {
+  .header { 
+    & h1 {
+      font-size: 1.8rem !important;
+    }
+  }
+  .back-button {
+    height: 37px !important;
+    width: 37px !important;
+  }
+  .back-button img {
+    height: 1.9rem !important;
+  }
+}
