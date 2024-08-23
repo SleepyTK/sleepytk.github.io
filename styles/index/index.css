@@ -12,7 +12,7 @@
   /* colors */
   --main-background-color: rgb(255, 255, 255);
   --main-text-color: rgb(37, 40, 59);
-  --main-background-grid-color: rgb(240, 240, 240);
+  --main-background-grid-color: rgb(240,240,240);
 
   --back-button-background-color: rgb(255, 255, 255);
   --back-button-color: rgb(0, 0, 0);
@@ -80,7 +80,7 @@ body {
   background-image:
       linear-gradient(to right, var(--main-background-grid-color) 1px, transparent 1px),
       linear-gradient(to bottom, var(--main-background-grid-color) 1px, transparent 1px);
-  z-index: -1; /* Ensure the grid is behind the content */
+  z-index: -1;
 }
 
 /* CODE FOR EXAMPLE PAGES */
