@@ -20,17 +20,6 @@
   --back-button-bottom-shadow: rgb(245, 245, 245);
   
   --button-display-color: rgb(255, 255, 255);
-
-  /* --main-background-color: rgb(40, 40, 40);
-  --main-text-color: rgb(200, 220, 240);
-  --main-background-grid-color: rgb(50, 50, 50);
-
-  --back-button-background-color: rgb(60, 60, 60);
-  --back-button-color: rgb(255, 255, 255);
-  --back-button-top-shadow: rgb(0, 0, 0, .225);
-  --back-button-bottom-shadow: rgb(0, 0, 0, 0.1);
-
-  --button-display-color: rgb(20, 20, 20); */
 }
 :root.darkmode{
   --main-background-color: rgb(40, 40, 40);
@@ -55,6 +44,9 @@ button {
 }
 html {
   background-color: var(--main-background-color);
+}
+body {
+  min-height: 95vh;
 }
 
 /* width */
@@ -140,7 +132,7 @@ html {
   height: 42px;
 
   background-color: white;
-  background-image: url('../../svg/buttonexamples/back-to-top.svg');
+  background-image: url('../../svg/back-to-top.svg');
 
   border-radius: 100%;
   border: 1px solid rgb(70, 70, 70);

@@ -3,6 +3,8 @@
 <head>
     <!-- calls script that loads in the head -->
   <script src="components/head/loadHead.js" defer></script>
+  <link rel="stylesheet" href="/content.css">
+  <link rel="stylesheet" href="/navbar.css">
 </head>
 <body>
   <!-- adds grid background to the website -->
@@ -68,7 +70,7 @@
   
       <!-- Who Am I Section -->
       <h2 class="content-head">
-        <span class="section-title">&lt; WHO AM I &gt;</span>
+        <span class="section-title">&lt; WHO AM I? &gt;</span>
       </h2>
       <p class="content-text">
         <span class="lang-content lang-en">
@@ -91,7 +93,7 @@
   
      <!-- In The Works Section -->
      <h2 class="content-head">
-      <span class="section-title">&lt; IN THE WORKS &gt;</span>
+      <span class="section-title">&lt; CURRENTLY WORKING ON &gt;</span>
     </h2>
     <p class="content-text">
       <span class="lang-content lang-en">
@@ -111,7 +113,7 @@
   </div>
 </body>
 <script>
-  function changeLanguage(lang, sectionKey) {
+  function changeLanguage(lang) {
     document.querySelectorAll(`.content-text .lang-content`).forEach(el => {
       el.style.display = 'none';
     });
@@ -122,17 +124,15 @@
   }
 
   function setDefaultLanguage() {
-    const userLang = navigator.language || navigator.userLanguage; // Get user's language preference
-    const language = userLang.split('-')[0].toUpperCase(); // Extract language code (e.g., 'en', 'nl', 'jp')
-    
-    // Set default language for all sections based on user's language preference
+    const userLang = navigator.language || navigator.userLanguage;
+    const language = userLang.split('-')[0].toUpperCase();
+
     document.querySelectorAll('.content-text').forEach(section => {
       const key = section.getAttribute('data-key');
       changeLanguage(language, key);
     });
   }
 
-  // Call the function to set the default language
   setDefaultLanguage();
 </script>
 </html>

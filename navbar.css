@@ -117,6 +117,9 @@
 }
 @media screen and (max-width:1920px) {
   /* makes everything 10% smaller than initial size */
+  .banner{
+    height: 100vh;
+  }
   .banner .slider .item {  transform: 
     rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
     translateZ(calc(550px * .90));}
@@ -132,6 +135,9 @@
 }
 @media screen and (max-width:1600px) {
   /* makes everything 25% smaller than initial size */
+  .banner{
+    height: 48rem;
+  }
   .banner .slider .item {  transform: 
     rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
     translateZ(calc(550px * 0.75));
@@ -141,6 +147,9 @@
     width: calc(200px * 0.75);
     height: calc(250px * 0.75);
     left: calc(50% - 75px);
+  }
+  .content {
+    width: 1100px;
   }
 
   /* changes font-size accordingly */
@@ -158,6 +167,9 @@
 }
 @media screen and (max-width:1300px) {
   /* makes everything 35% smaller than initial size */
+  .banner{
+    height: 40rem;
+  }
   .banner .slider .item {  transform: 
     rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
     translateZ(calc(550px * 0.65));}
@@ -166,6 +178,10 @@
     width: calc(200px * 0.65);
     height: calc(250px * 0.65);
     left: calc(50% - 65px);
+  }
+
+  .content {
+    width: 900px;
   }
 
   /* changes font-size accordingly */
@@ -183,6 +199,9 @@
 }
 @media screen and (max-width:1000px) {
   /* makes everything 45% smaller than initial size */
+  .banner{
+    height: 32rem;
+  }
   .banner .slider .item {  transform: 
     rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
     translateZ(calc(550px * 0.55));}
@@ -193,6 +212,9 @@
     left: calc(50% - 55px);
   }
 
+  .content {
+    width: 800px;
+  }
   /* changes font-size accordingly */
   .banner .nav-content{
     width: 800px;
@@ -208,6 +230,9 @@
 }
 @media screen and (max-width:850px) {
   /* makes everything 60% smaller than initial size */
+  .banner{
+    height: 25rem;
+  }
   .banner .slider .item {  transform: 
     rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
     translateZ(calc(550px * 0.40));}
@@ -216,6 +241,10 @@
     width: calc(200px * 0.40);
     height: calc(250px * 0.40);
     left: calc(50% - 40px);
+  }
+
+  .content {
+    width: 500px;
   }
 
   /* changes font-size accordingly */
@@ -236,6 +265,9 @@
 }
 @media screen and (max-width:550px) {
   /* makes everything 65% smaller than initial size */
+  .banner{
+    height: 23rem;
+  }
   .banner .slider .item {  transform: 
     rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
     translateZ(calc(550px * 0.35));}
@@ -244,6 +276,10 @@
     width: calc(200px * 0.35);
     height: calc(250px * 0.35);
     left: calc(50% - 35px);
+  }
+
+  .content {
+    width: 450px;
   }
 
   /* changes font-size accordingly */
@@ -264,6 +300,9 @@
 }
 @media screen and (max-width:450px) {
   /* makes everything 70% smaller than initial size */
+  .banner{
+    height: 22rem;
+  }
   .banner .slider .item {  transform: 
     rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
     translateZ(calc(550px * 0.30));}
@@ -274,6 +313,9 @@
     left: calc(50% - 30px);
   }
 
+  .content {
+    width: 350px;
+  }
   /* changes font-size accordingly */
   .banner .nav-content{
     width: 350px;

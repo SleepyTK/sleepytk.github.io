@@ -9,10 +9,10 @@
   <button onclick="scrollToTop()" id="back-to-top"></button>
   <div class="header">
     <a class="back-button" href="../">
-      <img src="../svg/buttonexamples/arrow-left.svg" alt="">
+      <img src="../../svg/arrow-left.svg" alt="">
     </a>
   
-    <h1>BUTTON EXAMPLES</h1>
+    <div class="header-title"><h1>BUTTON EXAMPLES</h1></div>
   </div>
   
   <div class="button-grid" style="margin: .5rem auto;">
@@ -139,7 +139,7 @@
 
     function scrollFunction() {
         var button = document.getElementById("back-to-top");
-        document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ? button.classList.add("show") : button.classList.remove("show");
+        document.body.scrollTop > 5 || document.documentElement.scrollTop > 5 ? button.classList.add("show") : button.classList.remove("show");
     }
 
     function scrollToTop() {
