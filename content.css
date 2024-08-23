@@ -16,7 +16,7 @@
 .language-button-group {
   display: flex;
   gap: .25rem;
-  margin: 2rem 0 .5rem 0;
+  margin-bottom: 1rem;
 }
 .language-button {
   cursor: pointer;
