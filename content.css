@@ -14,14 +14,9 @@
   gap: 1rem;
 }
 .language-button-group {
-  position: fixed;
-  top: 0;
-  right: 0;
-
   display: flex;
-  flex-direction: column;
   gap: .25rem;
-  margin: .5rem;
+  margin-block: 1rem;
 }
 .language-button {
   cursor: pointer;

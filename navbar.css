@@ -170,6 +170,9 @@
   .banner{
     height: 40rem;
   }
+  .slider {
+    top: 12.5% !important;
+  }
   .banner .slider .item {  transform: 
     rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
     translateZ(calc(550px * 0.65));}
@@ -232,6 +235,9 @@
   /* makes everything 60% smaller than initial size */
   .banner{
     height: 25rem;
+  }
+  .slider {
+    top: 15% !important;
   }
   .banner .slider .item {  transform: 
     rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
