@@ -3,17 +3,23 @@
 <head>
       <!-- calls script that loads in the head -->
       <script src="../components/head/loadHead.js" defer></script>
+      <link rel="stylesheet" href="cardexamples.css">
 </head>
 <body>
   <button onclick="scrollToTop()" id="back-to-top"></button>
     <!-- adds grid background to the website -->
     <div class="background-grid"></div>
-  <!-- grid for all the buttons -->
-  <script src="../components/cardexamples/loadCardExamples.js" defer></script>
 
-   <!-- ICON LIBRARY -->
-   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <div class="header">
+      <a class="back-button" href="../">
+        <img src="../svg/buttonexamples/arrow-left.svg" alt="">
+      </a>
+      <div class="header-title"><h1>CARD EXAMPLES</h1></div>
+    </div>
+    
+    <div class="card-grid">
+      
+    </div>
   <script>
     window.onscroll = function() {scrollFunction()};
 

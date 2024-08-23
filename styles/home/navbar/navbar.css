@@ -1,37 +1,3 @@
-.navbar-topleft {
-  scale: .3;
-  position: fixed !important;
-  translate: -46rem -13vh;
-  transition: all 1s ease;
-}
-.navbar-content-topright {
-  scale: .5;
-  position: fixed !important;
-  translate: 35rem -44rem;
-  transition: all 1s ease;
-  .info {
-    opacity: 0;
-    transition: all .25s ease;
-  }
-}
-@media screen and (max-width:1800px) {.navbar-content-topright{translate: 30rem -44rem;} .navbar-topleft{translate: -40rem -13vh !important;}}
-@media screen and (max-width:1700px) {.navbar-content-topright{translate: 27rem -44rem;} .navbar-topleft{translate: -38rem -13vh !important;}}
-@media screen and (max-width:1600px) {.navbar-content-topright{translate: 26rem -34rem;} .navbar-topleft{translate: -35rem -12vh !important;}}
-@media screen and (max-width:1500px) {.navbar-content-topright{translate: 22rem -34rem;} .navbar-topleft{translate: -33rem -12vh !important;}}
-@media screen and (max-width:1400px) {.navbar-content-topright{translate: 19rem -34rem;} .navbar-topleft{translate: -30rem -12vh !important;}}
-@media screen and (max-width:1300px) {.navbar-content-topright{translate: 19rem -29rem;} .navbar-topleft{translate: -28rem -12vh !important;}}
-@media screen and (max-width:1200px) {.navbar-content-topright{translate: 16rem -29rem;} .navbar-topleft{translate: -25rem -12vh !important;}}
-@media screen and (max-width:1100px) {.navbar-content-topright{translate: 13rem -29rem;} .navbar-topleft{translate: -22rem -12vh !important;}}
-@media screen and (max-width:1000px) {.navbar-content-topright{translate: 14.5rem -24rem;} .navbar-topleft{translate: -20rem -12vh !important;}}
-@media screen and (max-width:900px)  {.navbar-content-topright{translate: 12.5rem -24rem;} .navbar-topleft{translate: -19rem -12vh !important;}}
-@media screen and (max-width:850px)  {.navbar-content-topright{translate: 18rem -18rem; scale: .7;} .navbar-topleft{translate: -18rem -10vh !important; scale: .4;}}
-@media screen and (max-width:800px)  {.navbar-content-topright{translate: 15rem -17.5rem;} .navbar-topleft{translate: -15rem -10vh !important;}}
-@media screen and (max-width:700px)  {.navbar-content-topright{translate: 12rem -17.5rem;} .navbar-topleft{translate: -12rem -10vh !important;}}
-@media screen and (max-width:600px)  {.navbar-content-topright{translate: 11rem -17.5rem;} .navbar-topleft{translate: -11rem -10vh !important;}}
-@media screen and (max-width:550px)  {.navbar-content-topright{translate: 9rem -16.5rem;} .navbar-topleft{translate: -10rem -10vh !important;}}
-@media screen and (max-width:500px)  {.navbar-content-topright{translate: 7rem -16.75rem;} .navbar-topleft{translate: -8rem -10vh !important;}}
-@media screen and (max-width:450px)  {.navbar-content-topright{translate: 6rem -15.5rem;} .navbar-topleft{translate: -8rem -10vh !important;}}
-@media screen and (max-width:400px)  {.navbar-content-topright{translate: 5rem -15.5rem;} .navbar-topleft{translate: -6rem -10vh !important;}}
 .banner {
   width: 100%;
   height: 100vh;
@@ -41,7 +7,6 @@
 }
 .banner .slider {
   position: absolute;
-  transition: all 1s ease;
   width: 200px;
   height: 250px;
   top: 10%;
@@ -96,7 +61,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: start;
-  transition: all 1s ease;
 }
 .banner .nav-content h1 {
   font-family: 'ICA Rubrik';
@@ -161,6 +125,9 @@
     width: calc(200px * .90);
     height: calc(250px * .90);
     left: calc(50% - 90px);
+  }
+  .content {
+    width: 1400px;
   }
 }
 @media screen and (max-width:1600px) {

@@ -1,12 +1,7 @@
-.content-shift {
-  transform: translateY(-65vh);
-  /* still need to fix empty space when translating (negative margin doesn't work) */
-}
-
 .content {
   margin-inline: auto;
   text-align: left;
-  width: 1000px;
+  width: 1400px;
   margin-top: 1rem;
   font-size: 1.5rem;
   transition: all 1s ease;
@@ -25,30 +20,38 @@
   justify-content: start;
   align-items: center;
   gap: 1rem;
+}
+.language-button-group {
+  position: fixed;
+  top: 0;
+  right: 0;
 
-  .language-button {
-    cursor: pointer;
-    background-color: transparent;
-    color: var(--main-text-color);
-    
-    padding: .25rem;
-    margin-inline: -.25rem;
-    font-size: 1rem;
-    font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin: .5rem;
+}
+.language-button {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--main-text-color);
   
-    border: none;
-    outline: 1px solid var(--main-text-color);
-    transition: all .4s ease;
-    border-radius: .5rem;
-    &:hover {
-      background-color: var(--main-text-color);
-      color: white;
-      outline: none;
-    }
+  padding: .25rem;
+  font-size: 1rem;
+  font-weight: 100;
+
+  border: none;
+  outline: 1px solid var(--main-text-color);
+  transition: all .4s ease;
+  border-radius: .5rem;
+  &:hover {
+    background-color: var(--main-text-color);
+    color: white;
+    outline: none;
   }
 }
 @media screen and (max-width:1080px) {
-  .content-head .language-button {
+  .language-button {
     font-size: .75rem;
     padding: .15rem;
     border-radius: .25rem;
